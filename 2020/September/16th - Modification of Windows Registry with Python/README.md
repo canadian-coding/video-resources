@@ -57,7 +57,7 @@ with winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER) as hkey: # Get the n
 ### Step 2. Connect to the sub-key with winreg.OpenKey()
 Now that we're in the Hkey we need, lets get into the sub-key we want. In this case it's the ```Environment``` key. Much like our hkey, we need to "open" it:
 
-```
+```python
 import winreg # Allows access to the windows registry
 import ctypes # Allows interface with low-level C API's
 
